@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>My Favorite Recipes</title>
+</head>
+<body bgcolor="green">
+<style>
+/* CSS Body */
+ body, html {
+   margin: 0;
+   padding: 0;
+   background:#f4f4f4;
+   font-size: 1rem;
+   
+ }
+
+ /* FLEXBOX */
+ .flex-container {
+   display: flex;
+   flex-direction: column;
+
+ }
+
+
+ /* Headings */
+  h1 {
+   padding: 10px;
+   margin: 5px;
+   font-style: normal;
+   text-shadow: 1px 1.5px;
+   text-align: center;
+   color: black;
+   border: groove;
+   background: lightyellow;
+   border-radius: 20px;
+   top: 1vh;
+   height: 30px;
+   width: 100vw;
+   position: fixed;
+   opacity: 80%;
+   z-index: 2;
+   
+ }
+
+ 
+h2 {
+  font-family: 'Abril Fatface', cursive;
+  width: 80px;
+  padding: 3px;
+  border: 5px inset darkred;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+
+ /* Navigation Bar */
+
+ summary {
+   padding: 7px;
+   margin: 70px;
+   margin-bottom: -22px;
+  text-align: center;
+ }
+
+  ul {
+  list-style: none;
+  font-size: 1.3rem;
+  padding: 10px;
+  background-color: #333;
+  text-align: center;
+  opacity: 0.9;
+  
+
+ }
+
+ ul li a:hover {
+   background-color: darkgrey;
+ }
+
+ a {
+  text-decoration: none;
+  color: white; 
+ }
+
+
+
+
+ /* Container */
+.container {
+  font-family: 'Bebas Neue', cursive;
+  border: 10px groove;
+  padding: 10px;
+  margin: 20px;
+  font-size: 0.9rem;
+  background-color: lightyellow;
+}
+
+
+
+
+/* Images */
+img  {
+  border: 5px groove gray;
+  padding: 2px;
+  width: 280px;
+  height: 390px;
+  margin: 20px 20px;
+}
+
+
+
+/* Sections */
+.soup {
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.salad {
+  box-sizing: border-box;
+  margin-left: 20px;
+  
+}
+
+img.pizza {
+  box-sizing: border-box;
+  margin-left: 20px;
+  width: 400px;
+  height: 300px;
+}
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  opacity: 0.9;
+}
+
+footer a {
+  text-align: center;
+  padding: 3px;
+  background: #333;
+  display: inline-table;
+  color: blue;
+  font-size: 1.3em;
+  border: 3px solid white;
+  background-color: lightgrey;
+  text-decoration: underline;
+}
+</style>
+  <!-- Heading -->
+ <header>
+   <h1>Contact</h1>
+ </header>
+
+ <!-- Navigation Links -->
+ <header>
+  <details>
+    <summary>Home</summary>
+    <nav>
+      <ul id="recipelist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#soup">Soup</a></li>
+        <li><a href="#salad">Salad</a></li>
+        <li><a href="#pizza">Pizza</a></li>
+      </ul>
+    </nav>
+  </details>
+ </header>
+<br>
+ <!-- Contact List -->
+<style>
+/* Contact CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body, html {
+  margin: 0;
+  padding: 0;
+  background:#f4f4f4;
+  font-size: 1rem;
+}
+
+
+/* Headings */
+h1 {
+  padding: 10px;
+  margin: 5px;
+  font-style: normal;
+  text-shadow: 1px 1.5px;
+  text-align: center;
+  color: black;
+  border: groove;
+  background: lightyellow;
+  border-radius: 20px;
+  top: 1vh;
+  height: 60px;
+  width: 100vw;
+  position: fixed;
+  opacity: 80%;
+  z-index: 2;
+  
+}
+
+
+ /* Navigation Bar */
+
+ summary {
+  padding: 7px;
+  margin: 70px;
+  margin-bottom: -22px;
+ text-align: center;
+}
+
+ ul {
+  list-style: none;
+  margin: 20px;
+  padding: 10px;
+  width: 25 25em;
+  overflow: hidden;
+  background: #333;
+  border: 2px groove;
+  text-align: center;
+ }
+
+ ul li {
+   display: inline;
+   /* float: center; */
+ }
+
+ a {
+  display: block;
+  padding: 8px;
+  text-decoration-line: none;
+  color: white; 
+ }
+
+ a:hover {
+   color: lightgrey;
+   background: lightslategray;
+ }
+
+
+ 
+/* style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* clear floats after the columb */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+@media screen and (max-width: 600px) {
+.column, input[type=submit] {
+  width: 100%;
+ margin-top: 0;
+}
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  opacity: 0.7;
+}
+
+footer a {
+  text-align: center;
+  padding: 3px;
+  background: #333;
+  display: inline-table;
+  color: white;
+}
+</style>
+ <div class="container">
+  <div style="text-align: center;">
+    <p><em>Swing by for a nice meal, or leave us a message:</em></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="./deli.jpg" style="width:100%">
+    </div>
+      <div class="column">
+        <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="country">Country</label>
+      <select name="country" id="country">
+      <option value="austrailia">Austrailia</option>
+      <option value="canada">Canada</option>
+      <option value="USA">USA</option>
+    </select>
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Write Something.." style="height:170px"></textarea>
+  <input type="submit" value="submit">
+ </form>
+</div>
+</div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <p>Author: <em>Ashutosh Kumar</em></p>
+      <p><a href="mailto:ashutoshkumar05rahul.com">ashutoshkumar05rahul.com</a></p>
+      </footer>
+    </body>
+    </html>
